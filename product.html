@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gridstyle.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="header">
+    <img src="images/header.jpg" alt="โลโก้ร้าน">
+</div>
+<div class="grid-container">
+    <nav class="item">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+    </nav>
+    
+    <nav class="index1">
+        <h2>Our Catalog</h2>
+        <p>Browse products and details below</p>
+        <img src="images/product1.jpg" alt="รูปร้านค้า">
+    </nav>
+    <nav class="index2">
+        <h2>Product Name</h2>
+        <p>Short descriotion, price, and actions ( add to cart, view details ) </p>
+        <img src="images/product2.jpg" alt="รูปแผนที่">
+    </nav>
+    <nav class="info1">
+        <h2>สมัครสมาชิก</h2>
+        <label for="">ชื่อ </label>
+            <input type="text" placeholder="ชื่อจริง"id=""><br>
+            
+        <label for="">นามสกุล </label>
+            <input type="text" placeholder="นามสกุล"id=""><br>
+            
+        <label for="">อีเมล </label>
+            <input type="text" placeholder="example@domain.com"id=""><br>
+        
+        <label for="">รหัสผ่าน </label>
+            <input type="text" placeholder="อย่างน้อย 8 ตัวอักษร"id=""><br>
+        
+        <label for="">ยืนยันรหัสผ่าน </label>
+            <input type="text" placeholder="ยืนยันรหัสผ่าน"id=""><br>    
+        
+        <label for="phone">เบอร์โทรศัพท์</label>
+            <input type="tel" placeholder="083-xxx-xxxx" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">    
+        <h1>เพศ</h1>
+            <input type="radio" name="gender" value="male"> 
+            <span>ชาย</span><br>
+            <input type="radio" name="gender" value="gil"> 
+            <span>หญิง</span><br>
+            <input type="radio" name="gender" value="secret"> 
+            <span>ไม่ระบุเพศ</span><br><br>
+            <input type="checkbox" id="it" name="Major1" value="IT"><span> รับข่าวสาร</span>
+            <input type="checkbox" id="it" name="Major1" value="IT"><span> โปรโมชั่น</span>
+            <input type="checkbox" id="it" name="Major1" value="IT"><span> กิจกรรม</span>
+        <h3>ประเภทสมาชิก</h3>
+            <select name="member-type" id="member-type">
+            <option value="general">ธรรมดา</option>
+            <option value="vip">VIP</option>
+            <option value="premium">Premium</option>
+            </select>
+        <div class="terms-group">
+            <input type="checkbox" name="terms" required><span> ยอมรับข้อกําหนดและเงื่อนไข</span>
+        </div>  
+        <button type="button" class="submit-btn">สมัครสมาชิก</button>
+        <p class="privacy">เราจะเก็บข้อมูลของคุณเป็นความลับ</p>
+    </nav>            
+</div>
+<footer>
+<div class="footer">
+    <img src="images/footer.jpg" alt="โลโก้ร้าน">
+</div>
+</footer>
+</body>
+
+</html>

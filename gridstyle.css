@@ -1,0 +1,184 @@
+ * { /*ความหมาย: หมายถึง "ทุกสิ่งทุกอย่างบนหน้าเว็บ" (All elements)
+        การทำงาน: สั่งให้กฎ 3 ข้อด้านล่างนี้มีผลกับทุกแท็ก ไม่ว่าจะเป็น div, p, h1, img, หรือ body*/
+box-sizing: border-box;
+/* ความหมาย: คำนวณขนาดกล่องแบบรวมเส้นขอบและระยะห่างข้างในไปด้วยเลย 
+การทำงาน: ปกติถ้าเราสั่งให้กล่องกว้าง 100px แล้วไปเพิ่มขอบอีก 5px กล่องมันจะบวมกลายเป็น 110px 
+จนล้นจอ แต่คำสั่งนี้จะบีบให้กล่องล็อกความกว้างไว้ที่ 100px เป๊ะๆ ไม่ว่าเราจะเพิ่มขอบเท่าไรก็ตาม*/
+margin: 0;
+/* ความหมาย: ระยะห่าง นอกกล่อง ให้เท่ากับ 0
+การทำงาน: ปกติเบราว์เซอร์จะแอบใส่ขอบว่างๆ
+รอบตัวเว็บหรือหัวข้อไว้ ทำให้มีช่องว่างขาวๆ ปล่อยทิ้งไว้ 
+การใส่ 0 คือสั่งลบขอบนอกออกให้หมด */
+padding: 0;
+/* ความหมาย: ระยะห่าง ในกล่อง ให้เท่ากับ 0
+การทำงาน: ลบช่องว่างดันเนื้อหาข้างในกล่องออกทั้งหมด 
+เพื่อไม่ให้เบราว์เซอร์แอบใส่วิถีการเว้นวรรคมาเอง */
+}
+.header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px; 
+
+}
+.item {
+  background-color: #87cefa;
+  color: white;
+  padding: 20px;
+  grid-column: 1 / -1;
+  height: auto;
+  margin-top: 10px;
+}
+.item a {
+  text-align: left;
+  color: rgb(0, 0, 0);
+  padding: 5px 5px;
+  text-decoration: none;
+   /*เอาเส้นใต้ข้อความออก*/
+  font-weight: bold;
+  /* ตัวอักษรหนาขึ้น */
+}
+.index1 {
+    background-color: #87cefa;
+    text-align: left;
+    grid-column: 1 / 3;
+}
+.index1 h2 {
+    color: rgb(0, 0, 0);
+    padding: 20px; 
+}
+.index1 p {
+    color: rgb(0, 0, 0);
+    padding-left: 20px; 
+}
+.index1 img {
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px;
+}
+.index2 {
+    background-color: #87cefa;
+    text-align: left;
+    grid-column: 1 / 3;
+}
+.index2 h2 {
+    color: rgb(0, 0, 0);
+    padding: 20px; 
+}
+.index2 p {
+    color: rgb(0, 0, 0);
+    padding-left: 20px; 
+}
+.index2 img {
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px;
+}
+.info1 {
+    grid-column: 3 / 4;
+    grid-row:   2 / 4;
+    background-color: #87cefa;
+    text-align: left;
+}
+.info1 h2 {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+.info1 label  {
+  padding-left:25px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 20px;
+}
+.info1 input:not([type="radio"]):not([type="checkbox"]) {
+  width: 90%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  display: block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-size: 20px;
+}
+.info1 h1 {
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    font-size: 20px;
+}
+.info1 input[type="radio"]{
+    margin-left: 25px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+.info1 span {
+    font-size: 20px;
+}
+.info1 input[type="checkbox"]{
+    margin-left: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.info1 h3 {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+.info1 select {
+    width: 90%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+.terms-group {
+    margin-top: 10px;
+}
+.submit-btn {
+    width: 85%;
+    background-color: #003874; 
+    color: #ffffff;            
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-left: 20px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.submit-btn:hover {
+    background-color: #2b5cb8;
+}
+
+
+.privacy {
+    font-size: 12px;
+    color: #555555;           
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+}
+.footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
